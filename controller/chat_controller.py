@@ -3,11 +3,11 @@ from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
 from starlette.websockets import WebSocket, WebSocketDisconnect
 
-from socket.socket_manager import SocketManger
+from manager.chat_manager import ChatManager
 
 router = APIRouter(tags=['chat'])
 
-manager = SocketManger()
+manager = ChatManager()
 
 html = """
 <!DOCTYPE html>

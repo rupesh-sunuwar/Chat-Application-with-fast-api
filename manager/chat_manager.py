@@ -3,7 +3,7 @@ from typing import Dict
 from fastapi import WebSocket
 
 
-class SocketManger:
+class ChatManager:
 
     def __init__(self):
         self.active_chat_connections_dict: Dict[str, WebSocket] = {}
